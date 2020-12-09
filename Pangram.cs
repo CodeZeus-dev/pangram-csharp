@@ -14,6 +14,7 @@ public static class Pangram
         };
 
         int count = 0;
+
         for (int i = 0; i < inputArray.Length; i++)
         {
             if (alphabet.Contains(Char.ToLower(inputArray[i])))
@@ -23,7 +24,7 @@ public static class Pangram
         }
 
         if (count == inputArray.Length && count != 0)
-        {
+        { 
             return true;
         }
 
